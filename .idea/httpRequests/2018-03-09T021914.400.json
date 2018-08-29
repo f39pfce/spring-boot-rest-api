@@ -1,0 +1,8 @@
+{
+  "timestamp": 1520626754089,
+  "status": 400,
+  "error": "Bad Request",
+  "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
+  "message": "Required request body is missing: public org.springframework.http.ResponseEntity rest_api.entities.user.UserController.createNewUser(rest_api.entities.user.UserDto) throws rest_api.entities.user.UserExistsException",
+  "path": "/user/create"
+}

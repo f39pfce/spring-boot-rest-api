@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rest_api.entity.user.UserControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-03-22T14:00:48" hostname="aherrington-Precision-5520" time="0.024">
+  <properties/>
+  <testcase name="givenGoodCredentials_whenAttemptGetJwtToken_returnToken" classname="rest_api.entity.user.UserControllerTest" time="0.006"/>
+  <testcase name="givenBadCredentials_whenAttemptGetJwtToken_returnNotAllowed" classname="rest_api.entity.user.UserControllerTest" time="0.003"/>
+  <testcase name="givenUserExists_whenCreateUser_returnBadRequest" classname="rest_api.entity.user.UserControllerTest" time="0.01"/>
+  <testcase name="givenUserIsValid_whenCreateUser_saveSuccessfully" classname="rest_api.entity.user.UserControllerTest" time="0.003"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 09:00:48 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 09:00:48 [Test worker] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12bb187f: startup date [Thu Mar 22 09:00:48 CDT 2018]; root of context hierarchy
+2018-03-22 09:00:48 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/token],methods=[GET]}" onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:48 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create],methods=[POST]}" onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 09:00:48 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 09:00:48 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 09:00:48 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@12bb187f: startup date [Thu Mar 22 09:00:48 CDT 2018]; root of context hierarchy
+2018-03-22 09:00:48 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

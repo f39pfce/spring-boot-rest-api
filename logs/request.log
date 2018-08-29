@@ -1,0 +1,261 @@
+2018-03-02 14:46:02;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:49045ed6-306b-487c-8dc4-c70e3c1e02ad, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 14:46:36;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:b248643b-40a7-4b0c-b412-44309265d5db, content-type:application/json, user:aherrington@bluepay.com, secretkey:12cf0514-06a9-4236-aebf-d852bd5e5cfa, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 14:46:59;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:d09a2f9b-8477-41c9-8578-55859250ce40, content-type:application/json, user:aherrington@bluepay.com, secretkey:12cf0514-06a9-4236-aebf-d852bd5e5cfa, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 14:49:24;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:36a7a333-f210-4390-ae77-e05eae4c605f, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 14:50:00;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:21aef70e-d1a9-4d70-a4df-16179e0da8a0, content-type:application/json, user:aherrington@bluepay.com, secretkey:868d6f4b-f5a0-457d-b6d2-bc62e5acd225, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 14:50:57;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:d2fe374a-d8c6-4f03-b8fd-b3825384241e, content-type:application/json, user:aherrington@bluepay.com, secretkey:868d6f4b-f5a0-457d-b6d2-bc62e5acd225, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 14:50:58;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:dd924d05-f20b-4100-8b7d-6dc93ad123a5, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 14:51:15;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:8517f965-5e2c-46a9-95b9-48d97264a732, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 14:51:27;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:5991508a-369c-43fc-aaaa-dfb1361e6af2, content-type:application/json, user:aherrington@bluepay.com, secretkey:50457bff-67c1-4a1a-b6c8-3ac125bb4aea, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 14:52:04;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:c8e7931b-3c29-4055-be20-b722b1938375, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 14:52:23;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:154c53d6-81a4-4225-9bb6-6425397940ba, content-type:application/json, user:aherrington@bluepay.com, secretkey:61341621-8e49-44dc-8b29-16fc88c08dcd, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 14:53:32;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:f609cb3a-6a27-4565-ad1e-1136cdb824f0, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 14:53:45;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:54b73f56-2db3-4cc7-89c3-9a7c45aa7775, content-type:application/json, user:aherrington@bluepay.com, secretkey:92ed2daa-32c8-4cd5-b75f-5fc3fd3f27f8, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 14:54:02;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:3c11357c-75fb-4f10-acaf-f5ce1b04367e, content-type:application/json, user:aherrington@bluepay.com, secret_key:92ed2daa-32c8-4cd5-b75f-5fc3fd3f27f8, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 14:54:48;POST | http://localhost:8080/v1/merchant
+{cache-control:no-cache, postman-token:9cb031a1-bdca-4288-bd44-8b7ca3656e8d, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI0MDQyLCJleHAiOjE1MjAwMjc2NDJ9.VdwXwW4TQlCQie3NWvkHvTZHKT-G-7-0Y1bKBwTM_O0, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Dresden",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 14:55:34;PUT | http://localhost:8080/v1/merchant/1
+{cache-control:no-cache, postman-token:8d59f2c5-2fd2-46d2-8cde-ca133cdf3ca5, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI0MDQyLCJleHAiOjE1MjAwMjc2NDJ9.VdwXwW4TQlCQie3NWvkHvTZHKT-G-7-0Y1bKBwTM_O0, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:169, connection:keep-alive}
+{
+	"firstName" : "Ashton",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 14:55:55;PUT | http://localhost:8080/v1/merchant/1
+{cache-control:no-cache, postman-token:ffe11145-59dc-4e28-907a-a20ca043033e, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI0MDQyLCJleHAiOjE1MjAwMjc2NDJ9.VdwXwW4TQlCQie3NWvkHvTZHKT-G-7-0Y1bKBwTM_O0, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Allison",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 15:03:01;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:4117a24d-f655-4b04-8130-f9b3efde330e, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 15:20:44;POST | http://localhost:8080/v1/merchant/1/payment
+{cache-control:no-cache, postman-token:e8dc6909-a7c9-40c0-8548-43184fec494d, content-type:application/json, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:120, connection:keep-alive}
+{
+	"amount" : "5.50",
+	"creditCard" : { "cardNumber" : 4111111111111111, "cvv" : 119, "expirationDate" : "10-10-2017"}
+}
+2018-03-02 15:21:31;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:c658c6eb-5c3b-4d18-9080-c9fd15e3ee0c, content-type:application/json, user:aherrington@bluepay.com, secret_key:7bd93d93-7441-452d-8e86-d3ce137d73c9, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 15:21:52;POST | http://localhost:8080/v1/merchant/1/payment
+{cache-control:no-cache, postman-token:34bf0c50-071a-4237-8f98-3df1ab72f52b, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI1NjkxLCJleHAiOjE1MjAwMjkyOTF9.nbc39OMI8Mlhse4PL5CP30NaRG4EfooalMuO_6bMK6k, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:120, connection:keep-alive}
+{
+	"amount" : "5.50",
+	"creditCard" : { "cardNumber" : 4111111111111111, "cvv" : 119, "expirationDate" : "10-10-2017"}
+}
+2018-03-02 15:22:09;POST | http://localhost:8080/v1/merchant
+{cache-control:no-cache, postman-token:52ba4be4-6ad0-4836-92c7-d8526c3f0b6d, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI0MDQyLCJleHAiOjE1MjAwMjc2NDJ9.VdwXwW4TQlCQie3NWvkHvTZHKT-G-7-0Y1bKBwTM_O0, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Dresden",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 15:22:13;POST | http://localhost:8080/v1/merchant/1/payment
+{cache-control:no-cache, postman-token:d4cb5c5d-faf7-4180-852c-c95841ca9688, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI1NjkxLCJleHAiOjE1MjAwMjkyOTF9.nbc39OMI8Mlhse4PL5CP30NaRG4EfooalMuO_6bMK6k, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:120, connection:keep-alive}
+{
+	"amount" : "5.50",
+	"creditCard" : { "cardNumber" : 4111111111111111, "cvv" : 119, "expirationDate" : "10-10-2017"}
+}
+2018-03-02 15:22:27;PUT | http://localhost:8080/v1/merchant/1/payment
+{cache-control:no-cache, postman-token:da06b87c-676c-44d2-8808-7a13a81326a0, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI1NjkxLCJleHAiOjE1MjAwMjkyOTF9.nbc39OMI8Mlhse4PL5CP30NaRG4EfooalMuO_6bMK6k, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:120, connection:keep-alive}
+{
+	"amount" : "5.50",
+	"creditCard" : { "cardNumber" : 4111111111111112, "cvv" : 119, "expirationDate" : "10-10-2017"}
+}
+2018-03-02 15:22:32;PUT | http://localhost:8080/v1/merchant/1/payment/1
+{cache-control:no-cache, postman-token:a45f2728-56c3-44ee-8f0e-e7ddc25d5c19, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI1NjkxLCJleHAiOjE1MjAwMjkyOTF9.nbc39OMI8Mlhse4PL5CP30NaRG4EfooalMuO_6bMK6k, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:120, connection:keep-alive}
+{
+	"amount" : "5.50",
+	"creditCard" : { "cardNumber" : 4111111111111112, "cvv" : 119, "expirationDate" : "10-10-2017"}
+}
+2018-03-02 15:57:35;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:c6674038-ecc6-480b-9931-1b8091bbdfd7, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 15:57:47;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:6085f264-2edd-43cc-9d36-3586c7eafaa3, content-type:application/json, user:aherrington@bluepay.com, secret_key:7627f3df-dfe0-4c62-a8e9-c751aec99a29, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 15:58:03;POST | http://localhost:8080/v1/merchant
+{cache-control:no-cache, postman-token:99a8d9a2-0c0d-4c88-8bc3-139d6f975897, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI3ODY5LCJleHAiOjE1MjAwMzE0Njl9.qg6D9rPS_xUHBwPaYHzKVLLFe_NlSDz7ONxjuvfJmog, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Dresden",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 15:58:24;PUT | http://localhost:8080/v1/merchant/1
+{cache-control:no-cache, postman-token:33155eb7-a0a1-49c1-89c8-5d4749bd4c8d, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI0MDQyLCJleHAiOjE1MjAwMjc2NDJ9.VdwXwW4TQlCQie3NWvkHvTZHKT-G-7-0Y1bKBwTM_O0, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Allison",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 15:58:32;PUT | http://localhost:8080/v1/merchant/1
+{cache-control:no-cache, postman-token:72c77d25-5b8a-42b7-a748-b744f14b1aed, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI3ODY5LCJleHAiOjE1MjAwMzE0Njl9.qg6D9rPS_xUHBwPaYHzKVLLFe_NlSDz7ONxjuvfJmog, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Allison",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 16:00:10;PUT | http://localhost:8080/v1/merchant/1
+{cache-control:no-cache, postman-token:b84c833d-4875-4e4b-be7e-023ba1310060, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI3ODY5LCJleHAiOjE1MjAwMzE0Njl9.qg6D9rPS_xUHBwPaYHzKVLLFe_NlSDz7ONxjuvfJmog, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Allison",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 16:03:19;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:7a15d67d-361f-40b7-90cd-1b55c878b342, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 16:03:34;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:9ae7177f-b899-4ff3-be58-1d2c32d7fe80, content-type:application/json, user:aherrington@bluepay.com, secret_key:998cc6ce-1682-4b1b-b4eb-a4701ef7d111, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 16:03:50;POST | http://localhost:8080/v1/merchant
+{cache-control:no-cache, postman-token:5376eac6-dd4b-4cdb-9762-b4d6b7f61e21, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI4MjE3LCJleHAiOjE1MjAwMzE4MTd9._HSEaJ5WaqWai6eYIW7oYKo4FfY55n4wQSzYAXBwEN8, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Dresden",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 16:04:03;PUT | http://localhost:8080/v1/merchant
+{cache-control:no-cache, postman-token:b0ad98b5-25b6-4d0d-9ac3-9f26f6aa32ff, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI4MjE3LCJleHAiOjE1MjAwMzE4MTd9._HSEaJ5WaqWai6eYIW7oYKo4FfY55n4wQSzYAXBwEN8, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:169, connection:keep-alive}
+{
+	"firstName" : "Ashton",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 16:04:09;PUT | http://localhost:8080/v1/merchant/1
+{cache-control:no-cache, postman-token:6caff773-cc52-4521-9cc8-73a9a30fc8b8, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDI4MjE3LCJleHAiOjE1MjAwMzE4MTd9._HSEaJ5WaqWai6eYIW7oYKo4FfY55n4wQSzYAXBwEN8, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:169, connection:keep-alive}
+{
+	"firstName" : "Ashton",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 16:41:05;POST | http://localhost:8080/user/create
+{cache-control:no-cache, postman-token:c9f55317-3c2e-4066-aa49-b674e6492ba9, content-type:text/plain, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:23, connection:keep-alive}
+aherrington@bluepay.com
+2018-03-02 16:41:16;GET | http://localhost:8080/user/token
+{cache-control:no-cache, postman-token:32095616-eba9-4781-a2ab-eea3b9ca940b, content-type:application/json, user:aherrington@bluepay.com, secret_key:cefc87d0-fabb-41c3-97e8-2f43750bf26e, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, connection:keep-alive}
+
+2018-03-02 16:41:32;POST | http://localhost:8080/v1/merchant
+{cache-control:no-cache, postman-token:bac7b3aa-0929-470a-88b6-5bdeca4a462d, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDMwNDgwLCJleHAiOjE1MjAwMzQwODB9.Ji9sCqR59nw-A_yl2fVLSbmmYwJ5XH3v4_84mKMEpI0, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Dresden",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 16:41:46;PUT | http://localhost:8080/v1/merchant/1
+{cache-control:no-cache, postman-token:1d04884b-225a-4f27-b7b1-ed7fb09beda6, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDMwNDgwLCJleHAiOjE1MjAwMzQwODB9.Ji9sCqR59nw-A_yl2fVLSbmmYwJ5XH3v4_84mKMEpI0, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:169, connection:keep-alive}
+{
+	"firstName" : "Ashton",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 16:41:59;PUT | http://localhost:8080/v1/merchant/1
+{cache-control:no-cache, postman-token:e621f3b0-4e34-4fcb-853b-e8244315a82b, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDMwNDgwLCJleHAiOjE1MjAwMzQwODB9.Ji9sCqR59nw-A_yl2fVLSbmmYwJ5XH3v4_84mKMEpI0, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:169, connection:keep-alive}
+{
+	"firstName" : "Ashton",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}
+2018-03-02 16:43:28;PUT | http://localhost:8080/v1/merchant/1
+{cache-control:no-cache, postman-token:bbbbdd7e-96ff-4449-b9d1-d402097192ea, content-type:application/json, authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaGVycmluZ3RvbkBibHVlcGF5LmNvbSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiaWF0IjoxNTIwMDMwNDgwLCJleHAiOjE1MjAwMzQwODB9.Ji9sCqR59nw-A_yl2fVLSbmmYwJ5XH3v4_84mKMEpI0, user-agent:PostmanRuntime/6.4.1, accept:*/*, host:localhost:8080, cookie:JSESSIONID=EFCE18655A9C59AE31727AE2456C9E95, accept-encoding:gzip, deflate, content-length:170, connection:keep-alive}
+{
+	"firstName" : "Allison",
+	"lastName" : "Herrington",
+	"address" : "12345 Street",
+	"city" : "Atlanta",
+	"state" : "Georgia",
+	"email" : "no!",
+	"website" : "not yet"
+}

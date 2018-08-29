@@ -1,0 +1,57 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.10.RELEASE")
+    }
+}
+
+apply plugin: "java"
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "org.springframework.boot"
+
+jar {
+    baseName = "gs-rest-business"
+    version =  "0.1.0"
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+
+    compile "org.springframework.boot:spring-boot-starter-controllers"
+    compile "org.springframework.boot:spring-boot-starter-repositories-jpa"
+    compile "org.springframework.boot:spring-boot-starter-mail"
+    compile "org.springframework.boot:spring-boot-starter-logging"
+    compile "org.springframework.boot:spring-boot-starter-security"
+    compile "org.springframework.boot:spring-boot-starter-hateoas"
+    compile "org.springframework.boot:spring-boot-starter-jersey"
+    compile "org.springframework.security:spring-security-crypto"
+    compile "org.springframework.data:spring-data-jpa"
+
+    compile "org.modelmapper:modelmapper:0.7.7"
+    compile "org.hibernate:hibernate-envers:5.1.10.Final"
+    compile "mysql:mysql-connector-java"
+    compile "org.projectlombok:lombok:1.16.18"
+    compile "org.hibernate:hibernate-core:5.0.3.Final"
+    compile "javax.annotation:javax.annotation-api:1.3.1"
+    compile "org.aspectj:aspectjrt:1.+"
+    compile "org.json:json:20160212"
+    compile "commons-codec:commons-codec:1.11"
+    compile "org.apache.httpcomponents:httpcore:4.4.1"
+    compile "org.apache.httpcomponents:httpclient:4.5"
+    compile "io.jsonwebtoken:jjwt:0.2"
+    compile "org.apache.commons:commons-io:1.3.2"
+
+    compile group: 'org.springframework', name: 'spring-oxm', version: '3.0.6.RELEASE'
+    compile group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.2'
+
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rest_api.security.SecurityFactoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-03-22T13:59:38" hostname="aherrington-Precision-5520" time="0.041">
+  <properties/>
+  <testcase name="givenOAuthSecurity_whenGetSecurityFilter_returnHmacAuthenticationFilter" classname="rest_api.security.SecurityFactoryTest" time="0.037"/>
+  <testcase name="givenInvalidSecurityType_whenGetSecurityFilter_thenThrowConfigurationException" classname="rest_api.security.SecurityFactoryTest" time="0.001"/>
+  <testcase name="givenOAuthSecurity_whenGetSecurityFilter_returnJwtAuthenticationFilter" classname="rest_api.security.SecurityFactoryTest" time="0.001"/>
+  <system-out><![CDATA[2018-03-22 08:59:38 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

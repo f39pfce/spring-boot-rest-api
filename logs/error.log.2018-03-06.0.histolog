@@ -1,0 +1,62 @@
+2018-03-06 12:52:35;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 12:52:38;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 12:52:46;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 12:52:49;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 12:52:54;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 12:53:03;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 12:53:35;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 12:53:35;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 14:37:32;org.springframework.mail.MailParseException: Could not parse mail; nested exception is javax.mail.internet.AddressException: Local address contains control or whitespace in string ``{
+	aherrington2@bluepay.com
+}''
+2018-03-06 14:37:50;org.springframework.mail.MailParseException: Could not parse mail; nested exception is javax.mail.internet.AddressException: Domain contains illegal character in string ``{aherrington2@bluepay.com}''
+2018-03-06 15:31:08;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 15:31:09;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 15:31:51;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 15:31:53;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 15:31:58;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 15:32:00;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 15:32:05;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 15:32:14;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 15:35:49;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 15:35:50;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 16:04:41;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 16:04:42;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 16:05:22;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:05:25;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:05:29;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:05:31;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:05:36;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:05:45;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:09:13;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:09:15;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:09:20;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:09:22;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:09:27;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:09:36;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:18:21;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:18:23;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:18:28;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:18:30;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:18:35;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:18:44;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:19:31;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 16:34:46;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 16:34:47;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 16:35:26;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:35:28;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:35:33;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:35:35;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:35:39;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:35:49;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:45:08;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 16:45:09;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-06 16:45:51;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:45:53;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:45:58;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:46:00;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:46:05;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-06 16:46:14;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-06 16:56:37;java.lang.IllegalArgumentException: Invalid salt version
+2018-03-06 16:57:24;java.lang.IllegalArgumentException: Invalid salt version
+2018-03-06 17:09:48;java.lang.IllegalArgumentException: Invalid salt version

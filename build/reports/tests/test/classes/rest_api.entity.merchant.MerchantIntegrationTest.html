@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class rest_api.entity.merchant.MerchantIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class rest_api.entity.merchant.MerchantIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/rest_api.entity.merchant.html">rest_api.entity.merchant</a> &gt; MerchantIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">7</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.037s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">41%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="givenMerchantIdIsFound_thenDeleteMerchantSucceeds"></a>
+<h3 class="failures">givenMerchantIdIsFound_thenDeleteMerchantSucceeds</h3>
+<span class="code">
+<pre>javax.validation.ConstraintViolationException: Validation failed for classes [rest_api.entity.merchant.Merchant] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=gatewayType, rootBeanClass=class rest_api.entity.merchant.Merchant, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:138)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:78)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:197)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:75)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:478)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:179)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:163)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:198)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:272)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaMergeEventListener.saveWithGeneratedId(JpaMergeEventListener.java:56)
+	at org.hibernate.event.internal.DefaultMergeEventListener.saveTransientEntity(DefaultMergeEventListener.java:255)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsTransient(DefaultMergeEventListener.java:235)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:301)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:170)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:69)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:839)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:821)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:826)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.merge(AbstractEntityManagerImpl.java:1161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298)
+	at com.sun.proxy.$Proxy178.merge(Unknown Source)
+	at rest_api.entity.merchant.MerchantIntegrationTest.setupMerchant(MerchantIntegrationTest.java:275)
+	at rest_api.entity.merchant.MerchantIntegrationTest.givenMerchantIdIsFound_thenDeleteMerchantSucceeds(MerchantIntegrationTest.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="givenMerchantIsSaved_thenReturnConfirmationText"></a>
+<h3 class="failures">givenMerchantIsSaved_thenReturnConfirmationText</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;400&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:665)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at rest_api.entity.merchant.MerchantIntegrationTest.givenMerchantIsSaved_thenReturnConfirmationText(MerchantIntegrationTest.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="givenMerchantWithIdExists_whenFindOne_thenReturnMerchant"></a>
+<h3 class="failures">givenMerchantWithIdExists_whenFindOne_thenReturnMerchant</h3>
+<span class="code">
+<pre>javax.validation.ConstraintViolationException: Validation failed for classes [rest_api.entity.merchant.Merchant] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=gatewayType, rootBeanClass=class rest_api.entity.merchant.Merchant, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:138)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:78)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:197)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:75)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:478)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:179)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:163)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:198)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:272)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaMergeEventListener.saveWithGeneratedId(JpaMergeEventListener.java:56)
+	at org.hibernate.event.internal.DefaultMergeEventListener.saveTransientEntity(DefaultMergeEventListener.java:255)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsTransient(DefaultMergeEventListener.java:235)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:301)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:170)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:69)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:839)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:821)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:826)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.merge(AbstractEntityManagerImpl.java:1161)
+	at sun.reflect.GeneratedMethodAccessor312.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298)
+	at com.sun.proxy.$Proxy178.merge(Unknown Source)
+	at rest_api.entity.merchant.MerchantIntegrationTest.setupMerchant(MerchantIntegrationTest.java:275)
+	at rest_api.entity.merchant.MerchantIntegrationTest.givenMerchantWithIdExists_whenFindOne_thenReturnMerchant(MerchantIntegrationTest.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="givenMerchantsExist_whenFindAllWithPagenation_thenReturnJsonArray"></a>
+<h3 class="failures">givenMerchantsExist_whenFindAllWithPagenation_thenReturnJsonArray</h3>
+<span class="code">
+<pre>javax.validation.ConstraintViolationException: Validation failed for classes [rest_api.entity.merchant.Merchant] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=gatewayType, rootBeanClass=class rest_api.entity.merchant.Merchant, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:138)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:78)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:197)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:75)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:478)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:179)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:163)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:198)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:272)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaMergeEventListener.saveWithGeneratedId(JpaMergeEventListener.java:56)
+	at org.hibernate.event.internal.DefaultMergeEventListener.saveTransientEntity(DefaultMergeEventListener.java:255)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsTransient(DefaultMergeEventListener.java:235)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:301)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:170)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:69)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:839)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:821)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:826)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.merge(AbstractEntityManagerImpl.java:1161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298)
+	at com.sun.proxy.$Proxy178.merge(Unknown Source)
+	at rest_api.entity.merchant.MerchantIntegrationTest.setupMerchants(MerchantIntegrationTest.java:281)
+	at rest_api.entity.merchant.MerchantIntegrationTest.givenMerchantsExist_whenFindAllWithPagenation_thenReturnJsonArray(MerchantIntegrationTest.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="givenMerchantsExist_whenFindAll_thenReturnJsonArray"></a>
+<h3 class="failures">givenMerchantsExist_whenFindAll_thenReturnJsonArray</h3>
+<span class="code">
+<pre>javax.validation.ConstraintViolationException: Validation failed for classes [rest_api.entity.merchant.Merchant] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=gatewayType, rootBeanClass=class rest_api.entity.merchant.Merchant, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:138)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:78)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:197)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:75)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:478)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:179)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:163)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:198)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:272)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaMergeEventListener.saveWithGeneratedId(JpaMergeEventListener.java:56)
+	at org.hibernate.event.internal.DefaultMergeEventListener.saveTransientEntity(DefaultMergeEventListener.java:255)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsTransient(DefaultMergeEventListener.java:235)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:301)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:170)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:69)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:839)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:821)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:826)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.merge(AbstractEntityManagerImpl.java:1161)
+	at sun.reflect.GeneratedMethodAccessor312.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298)
+	at com.sun.proxy.$Proxy178.merge(Unknown Source)
+	at rest_api.entity.merchant.MerchantIntegrationTest.setupMerchants(MerchantIntegrationTest.java:281)
+	at rest_api.entity.merchant.MerchantIntegrationTest.givenMerchantsExist_whenFindAll_thenReturnJsonArray(MerchantIntegrationTest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="givenMerchantsExist_whenUpdateOnMerchant_thenReturnSuccess"></a>
+<h3 class="failures">givenMerchantsExist_whenUpdateOnMerchant_thenReturnSuccess</h3>
+<span class="code">
+<pre>javax.validation.ConstraintViolationException: Validation failed for classes [rest_api.entity.merchant.Merchant] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=gatewayType, rootBeanClass=class rest_api.entity.merchant.Merchant, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:138)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:78)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:197)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:75)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:478)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:179)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:163)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:198)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:272)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaMergeEventListener.saveWithGeneratedId(JpaMergeEventListener.java:56)
+	at org.hibernate.event.internal.DefaultMergeEventListener.saveTransientEntity(DefaultMergeEventListener.java:255)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsTransient(DefaultMergeEventListener.java:235)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:301)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:170)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:69)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:839)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:821)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:826)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.merge(AbstractEntityManagerImpl.java:1161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298)
+	at com.sun.proxy.$Proxy178.merge(Unknown Source)
+	at rest_api.entity.merchant.MerchantIntegrationTest.setupMerchant(MerchantIntegrationTest.java:275)
+	at rest_api.entity.merchant.MerchantIntegrationTest.givenMerchantsExist_whenUpdateOnMerchant_thenReturnSuccess(MerchantIntegrationTest.java:234)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="givenMissingFieldsInUpdate_whenUpdateAttempted_returnBadRequest"></a>
+<h3 class="failures">givenMissingFieldsInUpdate_whenUpdateAttempted_returnBadRequest</h3>
+<span class="code">
+<pre>javax.validation.ConstraintViolationException: Validation failed for classes [rest_api.entity.merchant.Merchant] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=gatewayType, rootBeanClass=class rest_api.entity.merchant.Merchant, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:138)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:78)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:197)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:75)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:478)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:179)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:163)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:198)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:272)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaMergeEventListener.saveWithGeneratedId(JpaMergeEventListener.java:56)
+	at org.hibernate.event.internal.DefaultMergeEventListener.saveTransientEntity(DefaultMergeEventListener.java:255)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsTransient(DefaultMergeEventListener.java:235)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:301)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:170)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:69)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:839)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:821)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:826)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.merge(AbstractEntityManagerImpl.java:1161)
+	at sun.reflect.GeneratedMethodAccessor312.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298)
+	at com.sun.proxy.$Proxy178.merge(Unknown Source)
+	at rest_api.entity.merchant.MerchantIntegrationTest.setupMerchant(MerchantIntegrationTest.java:275)
+	at rest_api.entity.merchant.MerchantIntegrationTest.givenMissingFieldsInUpdate_whenUpdateAttempted_returnBadRequest(MerchantIntegrationTest.java:259)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">givenMerchantIdIsFound_thenDeleteMerchantSucceeds</td>
+<td>0.081s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">givenMerchantIdIsNotFound_thenDeleteMerchantFails</td>
+<td>0.086s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">givenMerchantIsSaved_thenReturnConfirmationText</td>
+<td>0.093s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">givenMerchantMissingFieldsIsSaved_thenReturnBadRequest</td>
+<td>0.106s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">givenMerchantWithIdExists_whenFindOne_thenReturnMerchant</td>
+<td>0.076s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">givenMerchantsExist_whenFindAllWithPagenation_thenReturnJsonArray</td>
+<td>0.103s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">givenMerchantsExist_whenFindAll_thenReturnJsonArray</td>
+<td>0.076s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">givenMerchantsExist_whenUpdateOnMerchant_thenReturnSuccess</td>
+<td>0.083s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">givenMissingFieldsInUpdate_whenUpdateAttempted_returnBadRequest</td>
+<td>0.081s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">givenNoMerchantsExist_whenFindAll_thenReturnEmptyJsonArray</td>
+<td>0.085s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenNoMerchantsExist_whenFindOne_thenReturnEmptyJsonArray</td>
+<td>0.078s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenNoMerchantsExist_whenUpdateOnMerchant_thenReturnNotFound</td>
+<td>0.089s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 08:59:41 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 08:59:42 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 404 ms
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@766ac4d4: startup date [Thu Mar 22 08:59:41 CDT 2018]; root of context hierarchy
+2018-03-22 08:59:44 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 08:59:45 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 08:59:45 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 350 ms
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@691d96d: startup date [Thu Mar 22 08:59:45 CDT 2018]; root of context hierarchy
+2018-03-22 08:59:47 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+2018-03-22 08:59:47 [Test worker] ERROR exceptions-log - javax.validation.ConstraintViolationException: Validation failed for classes [rest_api.entity.merchant.Merchant] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be empty', propertyPath=firstName, rootBeanClass=class rest_api.entity.merchant.Merchant, messageTemplate='{org.hibernate.validator.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=gatewayType, rootBeanClass=class rest_api.entity.merchant.Merchant, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 08:59:47 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 08:59:48 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 312 ms
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 08:59:50 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 08:59:51 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76c3b442: startup date [Thu Mar 22 08:59:47 CDT 2018]; root of context hierarchy
+2018-03-22 08:59:51 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+2018-03-22 08:59:51 [Test worker] ERROR exceptions-log - rest_api.entity.merchant.MerchantNotFoundException
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 08:59:51 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 08:59:52 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 702 ms
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@426b24a6: startup date [Thu Mar 22 08:59:51 CDT 2018]; root of context hierarchy
+2018-03-22 08:59:55 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+2018-03-22 08:59:56 [Test worker] ERROR exceptions-log - rest_api.entity.merchant.MerchantNotFoundException
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 08:59:56 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 08:59:56 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 312 ms
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d782d4a: startup date [Thu Mar 22 08:59:56 CDT 2018]; root of context hierarchy
+2018-03-22 08:59:58 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 08:59:58 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 08:59:59 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 342 ms
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c6f31ea: startup date [Thu Mar 22 08:59:58 CDT 2018]; root of context hierarchy
+2018-03-22 09:00:01 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+2018-03-22 09:00:01 [Test worker] ERROR exceptions-log - rest_api.entity.merchant.MerchantNotFoundException
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 09:00:01 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 09:00:01 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 275 ms
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@764a3b35: startup date [Thu Mar 22 09:00:01 CDT 2018]; root of context hierarchy
+2018-03-22 09:00:03 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+2018-03-22 09:00:04 [Test worker] ERROR exceptions-log - javax.validation.ConstraintViolationException: Validation failed for classes [rest_api.entity.merchant.Merchant] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=gatewayType, rootBeanClass=class rest_api.entity.merchant.Merchant, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = javax.validation.ConstraintViolationException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = [&quot;gatewayType may not be null&quot;]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 09:00:04 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 09:00:04 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 272 ms
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53700d8c: startup date [Thu Mar 22 09:00:04 CDT 2018]; root of context hierarchy
+2018-03-22 09:00:06 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 09:00:06 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 09:00:07 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 261 ms
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c0a9e8a: startup date [Thu Mar 22 09:00:06 CDT 2018]; root of context hierarchy
+2018-03-22 09:00:09 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 09:00:09 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 09:00:09 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 279 ms
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a0b0d48: startup date [Thu Mar 22 09:00:09 CDT 2018]; root of context hierarchy
+2018-03-22 09:00:11 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 09:00:12 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 09:00:12 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 280 ms
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25595dcb: startup date [Thu Mar 22 09:00:12 CDT 2018]; root of context hierarchy
+2018-03-22 09:00:14 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 09:00:14 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 09:00:15 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 277 ms
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[PUT]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[GET]}&quot; onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.merchant.MerchantDto&gt; rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[GET]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.find(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[GET]}&quot; onto public rest_api.entity.payment.PaymentDtoResources rest_api.entity.payment.PaymentController.find(long,org.springframework.data.domain.Pageable) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment/{paymentId}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity rest_api.entity.payment.PaymentController.delete(long,long) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.entity.payment.PaymentNotFoundException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v1/merchant/{merchantId}/payment],methods=[POST]}&quot; onto public org.springframework.hateoas.Resource&lt;rest_api.entity.payment.PaymentDto&gt; rest_api.entity.payment.PaymentController.create(long,rest_api.entity.payment.PaymentDto) throws rest_api.entity.merchant.MerchantNotFoundException,rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/token],methods=[GET]}&quot; onto public rest_api.security.oauth.JwtToken rest_api.entity.user.UserController.getJwtToken(java.lang.String,java.lang.String) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/user/create],methods=[POST]}&quot; onto public rest_api.entity.user.UserDto rest_api.entity.user.UserController.createNewUser(rest_api.entity.user.UserDto) throws rest_api.entity.user.UserExistsException
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35565227: startup date [Thu Mar 22 09:00:14 CDT 2018]; root of context hierarchy
+2018-03-22 09:00:17 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:42 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:45 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:48 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:52 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:56 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 08:59:59 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:02 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:04 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:07 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:09 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:12 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Thu Mar 22 09:00:15 CDT 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.0</a> at Mar 22, 2018 9:00:51 AM</p>
+</div>
+</div>
+</body>
+</html>

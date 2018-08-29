@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rest_api.entity.merchant.MerchantControllerTest" tests="13" skipped="0" failures="5" errors="0" timestamp="2018-03-22T13:59:38" hostname="aherrington-Precision-5520" time="0.186">
+  <properties/>
+  <testcase name="givenNonOwnerAction_whenFindOne_thenReturnNotFound" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.018"/>
+  <testcase name="givenMerchantIdIsNotFound_thenDeleteMerchantFails" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.005"/>
+  <testcase name="givenNoMerchantsExist_whenUpdateOnMerchant_thenReturnNotFound" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.008"/>
+  <testcase name="givenMerchantIdIsFound_thenDeleteMerchantSucceeds" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.005"/>
+  <testcase name="givenNonOwnerAction_whenUpdateOnMerchant_thenReturnNotFound" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.005"/>
+  <testcase name="givenMerchantsExist_whenFindAll_thenReturnOnlyOwnedMerchants" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.055">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://localhost/v1/merchant/1&quot;},{&quot;rel&quot;:&quot;allPayments&quot;,&quot;href&quot;:&quot;http://localhost/v1/merchant/1/payment&quot;}]},{&quot;id&quot;:2,&quot;lastName&quot;:&quot;C3&quot;,&quot;firstName&quot;:&quot;P0&quot;,&quot;address&quot;:&quot;Tatooine&quot;,&quot;city&quot;:&quot;Sand Dunes&quot;,&quot;state&quot;:&quot;Annoyed&quot;,&quot;email&quot;:&quot;primandproper@robotemailcorp.com&quot;,&quot;website&quot;:&quot;www.resistance.com&quot;],&quot;links&quot;:[{&quot;rel&quot;:&quot;se...&gt; but was:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[gatewayType&quot;:null,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://localhost/v1/merchant/1&quot;},{&quot;rel&quot;:&quot;allPayments&quot;,&quot;href&quot;:&quot;http://localhost/v1/merchant/1/payment&quot;}]},{&quot;id&quot;:2,&quot;lastName&quot;:&quot;C3&quot;,&quot;firstName&quot;:&quot;P0&quot;,&quot;address&quot;:&quot;Tatooine&quot;,&quot;city&quot;:&quot;Sand Dunes&quot;,&quot;state&quot;:&quot;Annoyed&quot;,&quot;email&quot;:&quot;primandproper@robotemailcorp.com&quot;,&quot;website&quot;:&quot;www.resistance.com&quot;,&quot;gatewayType&quot;:null],&quot;links&quot;:[{&quot;rel&quot;:&quot;se...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://localhost/v1/merchant/1&quot;},{&quot;rel&quot;:&quot;allPayments&quot;,&quot;href&quot;:&quot;http://localhost/v1/merchant/1/payment&quot;}]},{&quot;id&quot;:2,&quot;lastName&quot;:&quot;C3&quot;,&quot;firstName&quot;:&quot;P0&quot;,&quot;address&quot;:&quot;Tatooine&quot;,&quot;city&quot;:&quot;Sand Dunes&quot;,&quot;state&quot;:&quot;Annoyed&quot;,&quot;email&quot;:&quot;primandproper@robotemailcorp.com&quot;,&quot;website&quot;:&quot;www.resistance.com&quot;],&quot;links&quot;:[{&quot;rel&quot;:&quot;se...&gt; but was:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[gatewayType&quot;:null,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://localhost/v1/merchant/1&quot;},{&quot;rel&quot;:&quot;allPayments&quot;,&quot;href&quot;:&quot;http://localhost/v1/merchant/1/payment&quot;}]},{&quot;id&quot;:2,&quot;lastName&quot;:&quot;C3&quot;,&quot;firstName&quot;:&quot;P0&quot;,&quot;address&quot;:&quot;Tatooine&quot;,&quot;city&quot;:&quot;Sand Dunes&quot;,&quot;state&quot;:&quot;Annoyed&quot;,&quot;email&quot;:&quot;primandproper@robotemailcorp.com&quot;,&quot;website&quot;:&quot;www.resistance.com&quot;,&quot;gatewayType&quot;:null],&quot;links&quot;:[{&quot;rel&quot;:&quot;se...&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at rest_api.entity.merchant.MerchantControllerTest.givenMerchantsExist_whenFindAll_thenReturnOnlyOwnedMerchants(MerchantControllerTest.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="givenNoMerchantsExist_whenFindOne_thenReturnEmptyJsonArray" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.006"/>
+  <testcase name="givenMerchantIsSaved_thenReturnConfirmationText" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.029">
+    <failure message="Wanted but not invoked:&#10;rest_api.entity.merchant.MerchantServiceImpl#0 bean.getActiveUser();&#10;-&gt; at rest_api.entity.merchant.MerchantControllerTest.givenMerchantIsSaved_thenReturnConfirmationText(MerchantControllerTest.java:134)&#10;&#10;However, there were other interactions with this mock:&#10;rest_api.entity.merchant.MerchantServiceImpl#0 bean.save(&#10;    rest_api.entity.merchant.MerchantDto@6fd17ea6&#10;);&#10;-&gt; at rest_api.entity.merchant.MerchantController.create(MerchantController.java:65)&#10;&#10;rest_api.entity.merchant.MerchantServiceImpl#0 bean.getMerchantDtoResource(&#10;    null&#10;);&#10;-&gt; at rest_api.entity.merchant.MerchantController.create(MerchantController.java:69)&#10;&#10;" type="org.mockito.exceptions.verification.WantedButNotInvoked">Wanted but not invoked:
+rest_api.entity.merchant.MerchantServiceImpl#0 bean.getActiveUser();
+-&gt; at rest_api.entity.merchant.MerchantControllerTest.givenMerchantIsSaved_thenReturnConfirmationText(MerchantControllerTest.java:134)
+
+However, there were other interactions with this mock:
+rest_api.entity.merchant.MerchantServiceImpl#0 bean.save(
+    rest_api.entity.merchant.MerchantDto@6fd17ea6
+);
+-&gt; at rest_api.entity.merchant.MerchantController.create(MerchantController.java:65)
+
+rest_api.entity.merchant.MerchantServiceImpl#0 bean.getMerchantDtoResource(
+    null
+);
+-&gt; at rest_api.entity.merchant.MerchantController.create(MerchantController.java:69)
+
+
+	at rest_api.entity.merchant.MerchantControllerTest.givenMerchantIsSaved_thenReturnConfirmationText(MerchantControllerTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="givenMerchantsExist_whenUpdateOnMerchant_thenReturnSuccess" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.008">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[]_links&quot;:{&quot;self&quot;:{&quot;hr...&gt; but was:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[gatewayType&quot;:null,&quot;]_links&quot;:{&quot;self&quot;:{&quot;hr...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[]_links&quot;:{&quot;self&quot;:{&quot;hr...&gt; but was:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[gatewayType&quot;:null,&quot;]_links&quot;:{&quot;self&quot;:{&quot;hr...&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at rest_api.entity.merchant.MerchantControllerTest.givenMerchantsExist_whenUpdateOnMerchant_thenReturnSuccess(MerchantControllerTest.java:316)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="givenNonOwnerAction_whenDeleteAttempted_thenReturnNotFound" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.006"/>
+  <testcase name="givenMerchantWithIdExists_whenFindOne_thenReturnMerchant" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.01">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[]_links&quot;:{&quot;self&quot;:{&quot;hr...&gt; but was:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[gatewayType&quot;:null,&quot;]_links&quot;:{&quot;self&quot;:{&quot;hr...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[]_links&quot;:{&quot;self&quot;:{&quot;hr...&gt; but was:&lt;...&quot;:&quot;www.resist.com&quot;,&quot;[gatewayType&quot;:null,&quot;]_links&quot;:{&quot;self&quot;:{&quot;hr...&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at rest_api.entity.merchant.MerchantControllerTest.givenMerchantWithIdExists_whenFindOne_thenReturnMerchant(MerchantControllerTest.java:257)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="givenMissingFieldsInUpdate_whenUpdateAttempted_returnBadRequest" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.008">
+    <failure message="java.lang.AssertionError: Status expected:&lt;400&gt; but was:&lt;500&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Status expected:&lt;400&gt; but was:&lt;500&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:665)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at rest_api.entity.merchant.MerchantControllerTest.givenMissingFieldsInUpdate_whenUpdateAttempted_returnBadRequest(MerchantControllerTest.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="givenNoMerchantsExist_whenFindAll_thenReturnEmptyJsonArray" classname="rest_api.entity.merchant.MerchantControllerTest" time="0.007"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-22 08:59:38 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@73f2c026: startup date [Thu Mar 22 08:59:38 CDT 2018]; root of context hierarchy
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant/{id}],methods=[PUT]}" onto public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant],methods=[GET]}" onto public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant],methods=[POST]}" onto public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@73f2c026: startup date [Thu Mar 22 08:59:38 CDT 2018]; root of context hierarchy
+2018-03-22 08:59:38 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = [{"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/1"},{"rel":"allPayments","href":"http://localhost/v1/merchant/1/payment"}]},{"id":2,"lastName":"C3","firstName":"P0","address":"Tatooine","city":"Sand Dunes","state":"Annoyed","email":"primandproper@robotemailcorp.com","website":"www.resistance.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/2"},{"rel":"allPayments","href":"http://localhost/v1/merchant/2/payment"}]}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = [{"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/1"},{"rel":"allPayments","href":"http://localhost/v1/merchant/1/payment"}]},{"id":2,"lastName":"C3","firstName":"P0","address":"Tatooine","city":"Sand Dunes","state":"Annoyed","email":"primandproper@robotemailcorp.com","website":"www.resistance.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/2"},{"rel":"allPayments","href":"http://localhost/v1/merchant/2/payment"}]}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"_links":{"self":{"href":"http://localhost/v1/merchant/1"},"allPayments":{"href":"http://localhost/v1/merchant/1/payment"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = [{"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/1"},{"rel":"allPayments","href":"http://localhost/v1/merchant/1/payment"}]},{"id":2,"lastName":"C3","firstName":"P0","address":"Tatooine","city":"Sand Dunes","state":"Annoyed","email":"primandproper@robotemailcorp.com","website":"www.resistance.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/2"},{"rel":"allPayments","href":"http://localhost/v1/merchant/2/payment"}]}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"_links":{"self":{"href":"http://localhost/v1/merchant/1"},"allPayments":{"href":"http://localhost/v1/merchant/1/payment"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"_links":{"self":{"href":"http://localhost/v1/merchant/1"},"allPayments":{"href":"http://localhost/v1/merchant/1/payment"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = [{"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/1"},{"rel":"allPayments","href":"http://localhost/v1/merchant/1/payment"}]},{"id":2,"lastName":"C3","firstName":"P0","address":"Tatooine","city":"Sand Dunes","state":"Annoyed","email":"primandproper@robotemailcorp.com","website":"www.resistance.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/2"},{"rel":"allPayments","href":"http://localhost/v1/merchant/2/payment"}]}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"_links":{"self":{"href":"http://localhost/v1/merchant/1"},"allPayments":{"href":"http://localhost/v1/merchant/1/payment"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"_links":{"self":{"href":"http://localhost/v1/merchant/1"},"allPayments":{"href":"http://localhost/v1/merchant/1/payment"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"_links":{"self":{"href":"http://localhost/v1/merchant/1"},"allPayments":{"href":"http://localhost/v1/merchant/1/payment"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public rest_api.entity.merchant.MerchantDtoResources rest_api.entity.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = [{"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/1"},{"rel":"allPayments","href":"http://localhost/v1/merchant/1/payment"}]},{"id":2,"lastName":"C3","firstName":"P0","address":"Tatooine","city":"Sand Dunes","state":"Annoyed","email":"primandproper@robotemailcorp.com","website":"www.resistance.com","gatewayType":null,"links":[{"rel":"self","href":"http://localhost/v1/merchant/2"},{"rel":"allPayments","href":"http://localhost/v1/merchant/2/payment"}]}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /v1/merchant
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.create(rest_api.entity.merchant.MerchantDto) throws rest_api.security.UnauthorizedAccessException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"_links":{"self":{"href":"http://localhost/v1/merchant/1"},"allPayments":{"href":"http://localhost/v1/merchant/1/payment"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"_links":{"self":{"href":"http://localhost/v1/merchant/1"},"allPayments":{"href":"http://localhost/v1/merchant/1/payment"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.http.ResponseEntity rest_api.entity.merchant.MerchantController.delete(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = rest_api.entity.merchant.MerchantNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.find(long) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":1,"lastName":"Solo","firstName":"Han","address":"Hoth","city":"Snow Rubble City","state":"Of Panic","email":"rebelscum4eva@fightthepower.com","website":"www.resist.com","gatewayType":null,"_links":{"self":{"href":"http://localhost/v1/merchant/1"},"allPayments":{"href":"http://localhost/v1/merchant/1/payment"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/merchant/1
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = rest_api.entity.merchant.MerchantController
+           Method = public org.springframework.hateoas.Resource<rest_api.entity.merchant.MerchantDto> rest_api.entity.merchant.MerchantController.update(long,rest_api.entity.merchant.MerchantDto) throws rest_api.entity.merchant.MerchantNotFoundException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = javax.validation.ConstraintViolationException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 500
+    Error message = null
+          Headers = {}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

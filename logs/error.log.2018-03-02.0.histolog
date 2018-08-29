@@ -1,0 +1,20 @@
+2018-03-02 13:28:13;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-02 13:28:15;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-02 13:28:20;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-02 13:28:22;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-02 13:28:25;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-02 13:28:33;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-02 13:28:57;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-02 13:28:58;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-02 14:31:45;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-02 14:31:47;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-02 14:31:52;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-02 14:31:54;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-02 14:31:57;rest_api.presentation.controllers.payment.PaymentNotFoundException
+2018-03-02 14:32:04;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-02 14:32:30;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-02 14:32:30;rest_api.presentation.security.UnauthorizedAccessException
+2018-03-02 14:50:59;org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]: Factory method 'entityManagerFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+2018-03-02 15:21:52;rest_api.presentation.controllers.merchant.MerchantNotFoundException
+2018-03-02 15:58:46;org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+2018-03-02 16:01:07;org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction

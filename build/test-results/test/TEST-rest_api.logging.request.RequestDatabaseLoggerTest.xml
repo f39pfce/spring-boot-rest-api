@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rest_api.logging.request.RequestDatabaseLoggerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-22T14:00:51" hostname="aherrington-Precision-5520" time="0.013">
+  <properties/>
+  <testcase name="givenAllWebRequests_whenLogRequest_RequestLogObjectPersisted" classname="rest_api.logging.request.RequestDatabaseLoggerTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

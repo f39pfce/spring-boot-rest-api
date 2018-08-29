@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rest_api.entities.merchant.MerchantControllerTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2018-03-16T19:19:37" hostname="aherrington-Precision-5520" time="0.215">
+  <properties/>
+  <testcase name="givenNonOwnerAction_whenFindOne_thenReturnNotFound" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.018"/>
+  <testcase name="givenMerchantIdIsNotFound_thenDeleteMerchantFails" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.012"/>
+  <testcase name="givenNoMerchantsExist_whenUpdateOnMerchant_thenReturnNotFound" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.027"/>
+  <testcase name="givenMerchantIdIsFound_thenDeleteMerchantSucceeds" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.011"/>
+  <testcase name="givenNonOwnerAction_whenUpdateOnMerchant_thenReturnNotFound" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.004"/>
+  <testcase name="givenMerchantsExist_whenFindAll_thenReturnOnlyOwnedMerchants" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.046"/>
+  <testcase name="givenNoMerchantsExist_whenFindOne_thenReturnEmptyJsonArray" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.004"/>
+  <testcase name="givenMerchantIsSaved_thenReturnConfirmationText" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.015"/>
+  <testcase name="givenMerchantsExist_whenUpdateOnMerchant_thenReturnSuccess" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.01"/>
+  <testcase name="givenNonOwnerAction_whenDeleteAttempted_thenReturnNotFound" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.004"/>
+  <testcase name="givenMerchantWithIdExists_whenFindOne_thenReturnMerchant" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.005"/>
+  <testcase name="givenMissingFieldsInUpdate_whenUpdateAttempted_returnBadRequest" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.026"/>
+  <testcase name="givenNoMerchantsExist_whenFindAll_thenReturnEmptyJsonArray" classname="rest_api.entities.merchant.MerchantControllerTest" time="0.009"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2018-03-16 14:19:36 [Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/home/aherrington/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@175a597: startup date [Fri Mar 16 14:19:36 CDT 2018]; root of context hierarchy
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant/{id}],methods=[PUT]}" onto public org.springframework.hateoas.Resource<rest_api.entities.merchant.MerchantDto> rest_api.entities.merchant.MerchantController.update(long,rest_api.entities.merchant.Merchant) throws rest_api.entities.merchant.MerchantNotFoundException
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant],methods=[GET]}" onto public rest_api.entities.merchant.MerchantDtoResources rest_api.entities.merchant.MerchantController.find(org.springframework.data.domain.Pageable) throws rest_api.security.UnauthorizedAccessException
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public org.springframework.hateoas.Resource<rest_api.entities.merchant.MerchantDto> rest_api.entities.merchant.MerchantController.find(long) throws rest_api.entities.merchant.MerchantNotFoundException
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity rest_api.entities.merchant.MerchantController.delete(long) throws rest_api.entities.merchant.MerchantNotFoundException
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/merchant],methods=[POST]}" onto public org.springframework.hateoas.Resource<rest_api.entities.merchant.MerchantDto> rest_api.entities.merchant.MerchantController.create(rest_api.entities.merchant.Merchant) throws rest_api.security.UnauthorizedAccessException
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@175a597: startup date [Fri Mar 16 14:19:36 CDT 2018]; root of context hierarchy
+2018-03-16 14:19:36 [Test worker] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionHandler
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
